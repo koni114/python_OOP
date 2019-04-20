@@ -116,7 +116,7 @@ class Employee(object):
     # self를 빼먹지 말자. 빼먹었을 때
     # error 문구 : full_name() takes no arguments ( 1 given)
     # -> 아무 인자를 던진 적이 없는데, 1개가 주어졌다고 할까?
-    #    이유는 self라는 인자가 자동으로 할당되기 때문이다.
+    #    이유는 self라는 인자가 자동으로 할당되기 때문이다. 하지만 받질 않았으므로, error가 발생한 것이다
     def full_name(self):
         return '{} {}'.format(self.first, self.last)
 

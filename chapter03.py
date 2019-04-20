@@ -22,6 +22,7 @@ class Employee(object):
     def apply_raise(self):
         # raise_amount는 클래스 변수의 클래스 네임스페이스에 저장되어 있으니
         # 클래스를 통해서 엑세스 해야함
+
         # but!! self라는 인스턴스를 이용해서도 호출 가능 -> 클래스 변수인데 어떻게????
         # 하단 참조!
         self.pay = int(self.pay * Employee.raise_amount)
@@ -47,6 +48,7 @@ print(emp_1.pay)
 # dict 메소드를 이용하여 내부를 살펴보면,
 # emp_1 이라는 인스턴스의 네임스페이스에는 raise_amount 변수가 없지만
 # Employee 클래스의 네임스페이스에는 존재함을 확인할 수 있다
+
 print(emp_1.__dict__)
 print(Employee.__dict__)
 

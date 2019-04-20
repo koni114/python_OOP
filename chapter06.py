@@ -15,6 +15,7 @@
 
 # 1. 먼저 int 타입을 베이스로하는 커스텀 클래스 만들어보자
 
+
 class MyInt(int):
     pass
 
@@ -57,7 +58,6 @@ class Food(object):
     def __init__(self, name, price):
         self.name = name
         self.price = price
-
 
 food_1 = Food('아이스크림', 3000)
 print(food_1)
